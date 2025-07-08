@@ -52,7 +52,9 @@
 // console.log(kiemTraChanLe(5));   // Output: "Lẻ"
 // console.log(kiemTraChanLe(8));   // Output: "Chẵn"
 
-//  Bai 1: Tao 1 Promise cơ ban
+//  Bai 1: Tao 1 Promise cơ ban 
+// const mypromise = new Promise((resolve, reject) =>{}) tao 1 bien promise de sau nay co the su dung lai
+// new promise ((resolve, reject)=>{}) 1 cach khac de tao 1 promise nhung sau nay ko the su dung lai 
 
 // let isFail = false;
 // const myPromise = new Promise((resolve, reject) =>{
@@ -64,6 +66,7 @@
 //         }
 //     }, 2000);
 // })
+// Ham settimeout duoc su dung de 
 
 // Bai 2: Dung .then() va .catch()
 
@@ -89,30 +92,30 @@
 
 
 // Home work: viet ham checkNumber nhan vao 1 so nguyen va tra ve 1 promise
-function checkNumber(num){
-    return new Promise((resolve, reject)=>{
-        if(num%2===0){
-            resolve("Số" + num + "Là số chẵn!");
-        } else {
-            reject("Lỗi" + num + "Là số lẻ!");
-        }
-    })
-}
-// Tạo 1 hàm để bắt sự kiện onclick 
-function check(){
-    let num = 10;
-    checkNumber(num)
-    .then((result)=>{
-        console.log(result);
-    })
-    .catch((error)=>{
-        console.log("Error", error);
-    })
-    .finally(()=>{
-        console.log("Kết thúc kiểm tra");
-    });
+// function checkNumber(num){
+//     return new Promise((resolve, reject)=>{
+//         if(num%2===0){
+//             resolve("Số" + num + "Là số chẵn!");
+//         } else {
+//             reject("Lỗi" + num + "Là số lẻ!");
+//         }
+//     })
+// }
+// // Tạo 1 hàm để bắt sự kiện onclick 
+// function check(){
+//     let num = 10;
+//     checkNumber(num)
+//     .then((result)=>{
+//         console.log(result);
+//     })
+//     .catch((error)=>{
+//         console.log("Error", error);
+//     })
+//     .finally(()=>{
+//         console.log("Kết thúc kiểm tra");
+//     });
 
-}
+// }
 
 
 
@@ -173,3 +176,35 @@ function check(){
 
 // console.log()
 // debugger
+// function change(){
+//     const el = document.getElementById("demo");
+//     el.innerHTML = "Thank you";
+//     el.style.color = "red"
+// }
+
+// function changecol() {
+//     const liList = document.querySelectorAll(".color li");
+//     for (let i = 0; i < liList.length; i++) {
+//         liList[0].style.color = "yellow";
+//         liList[1].style.color = "red";
+//         liList[2].style.color = "green";
+//     }
+
+//     const ulList = document.getElementsByClassName("color");
+//     const liList = ulList[0].getElementsByTagName("li");
+//}
+
+const title = document.getElementById("main-title");
+title.innerText = "Chào mừng bạn đến với khóa học JavaScript!";
+const mes = document.getElementById("description");
+mes.innerHTML = "Bạn sẽ học về <strong>DOM, Events</strong>"
+function submit(){
+    const name = document.getElementById("student-name").value;
+    const greetting = document.getElementById("greeting");
+    if(name.trim() !==""){
+        greetting.textContent = "Xin chao, " + name + "! ";
+    } else{
+        greetting.textContent = "";
+    }
+}
+

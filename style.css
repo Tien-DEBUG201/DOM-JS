@@ -1,0 +1,78 @@
+/* Căn giữa toàn trang */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  font-family: Arial, sans-serif;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chọn phần tử đầu tiên bên trong body — là thẻ <div> chứa form */
+body > div {
+  background-color: white;
+  border: 3px solid #3498db; /* Viền màu xanh */
+  border-radius: 12px;
+  padding: 30px 40px;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Các thành phần con */
+#main-title {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#description {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+input[type="text"]:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#greeting {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #2ecc71;
+}
