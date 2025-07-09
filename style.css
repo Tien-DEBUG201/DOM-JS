@@ -1,4 +1,4 @@
-/* Căn giữa toàn trang */
+
 html, body {
   height: 100%;
   margin: 0;
@@ -11,7 +11,7 @@ html, body {
   align-items: center;
 }
 
-/* Chọn phần tử đầu tiên bên trong body — là thẻ <div> chứa form */
+
 body > div {
   background-color: white;
   border: 3px solid #3498db; /* Viền màu xanh */
@@ -22,7 +22,7 @@ body > div {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Các thành phần con */
+
 #main-title {
   color: #2c3e50;
   font-size: 24px;
